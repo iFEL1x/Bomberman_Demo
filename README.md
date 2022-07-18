@@ -1,7 +1,7 @@
 # <p align="center"> Bomberman DEMO</p>
 
 <div align="Center">
-    <img src = https://github.com/iFEL1x/iFEL1x/blob/main/Resources/Screenshots/Screen(Bomberman)(0).png>
+    <img src = https://github.com/iFEL1x/iFEL1x/blob/main/Resources/Screenshots/Screen(Bomberman)(0).png height="400">
 </div>
 
 
