@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class AddScorePoint : MonoBehaviour
@@ -11,7 +9,7 @@ public class AddScorePoint : MonoBehaviour
             Player player = Collider.gameObject.GetComponent<Player>();
             if (player._playerDead)
             {
-                GlobalStateManager.Instance.PlayerDied(player.PlayerNumber); //Начисление баллов.
+                GlobalStateManager.Instance.PlayerDied(player.PlayerNumber);
                 gameObject.SetActive(false);
             }
         }

@@ -5,10 +5,10 @@ using UnityEngine.SceneManagement;
 public class GUIManager : MonoBehaviour
 {
     public static GUIManager Instance { get; set; }
-    public Action<bool> changeStateMenu; //Блоикровка передвижения игрока при активном меню.
+    public Action<bool> changeStateMenu;
 
-    [SerializeField] private GameObject menuPanel; //Меню игры
-    [SerializeField] private GameObject uiOnGame; //Игровой интерфейс
+    [SerializeField] private GameObject menuPanel;
+    [SerializeField] private GameObject uiOnGame;
     [SerializeField] private Animator cameraAnimator;
     [SerializeField] private GameObject restartButton;
 
