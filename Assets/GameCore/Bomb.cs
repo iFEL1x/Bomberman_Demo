@@ -8,7 +8,7 @@ public class Bomb : MonoBehaviour
     [SerializeField] private LayerMask levelMask;
     [SerializeField] private string hasPlayerNameThisBomb;
 
-    private bool _exploded = false;
+    public bool Exploded { get; set; }
 
 
     private void Awake()
@@ -18,7 +18,7 @@ public class Bomb : MonoBehaviour
 
     private void OnTriggerEnter(Collider collider)
     {
-        if(!_exploded && collider.CompareTag("Explosion"))
+        if(!Exploded && collider.CompareTag("Explosion"))
         {
             CancelInvoke("Explode");
             Explode();
@@ -30,7 +30,7 @@ public class Bomb : MonoBehaviour
         }
     }
     
-    void Explode()
+    public void Explode()
     {
         Instantiate(explosionPrefab, transform.position, Quaternion.identity);
 
@@ -40,7 +40,7 @@ public class Bomb : MonoBehaviour
         StartCoroutine(CreatExplosions(Vector3.left));
 
         GetComponent<MeshRenderer>().enabled = false;
-        _exploded = true;
+        Exploded = true;
         transform.Find("Collider").gameObject.SetActive(false);
 
         StartCoroutine(player.ReturnBombToPool(gameObject, 0.3f));

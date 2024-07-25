@@ -552,6 +552,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8026189872312945799, guid: 0b33133d521ae5c4095a4d49fff709d4,
         type: 3}
+      propertyPath: countdown
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8026189872312945799, guid: 0b33133d521ae5c4095a4d49fff709d4,
+        type: 3}
       propertyPath: respawnPointArr.Array.data[0]
       value: 
       objectReference: {fileID: 1886490411}
@@ -1059,6 +1064,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1054970419, guid: d6b129b432c046b48af54e14fe786f94, type: 3}
+      propertyPath: countdown
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1054970419, guid: d6b129b432c046b48af54e14fe786f94, type: 3}
       propertyPath: respawnPointArr.Array.data[0]
       value: 
@@ -2468,7 +2477,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 708d98989f046e34bafc9ecf2e712ee5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 708d98989f046e34bafc9ecf2e712ee5,
         type: 3}
