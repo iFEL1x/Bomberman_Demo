@@ -16,6 +16,20 @@ public class Bomb : MonoBehaviour
         player = GameObject.Find(hasPlayerNameThisBomb).GetComponent<Player>();
     }
 
+    private void OnTriggerEnter(Collider collider)
+    {
+        if(!_exploded && collider.CompareTag("Explosion"))
+        {
+            CancelInvoke("Explode");
+            Explode();
+        }
+
+        if (collider.CompareTag("Bomb"))
+        {
+            StartCoroutine(player.ReturnBombToPool(gameObject, 0f));
+        }
+    }
+    
     void Explode()
     {
         Instantiate(explosionPrefab, transform.position, Quaternion.identity);
@@ -49,20 +63,6 @@ public class Bomb : MonoBehaviour
                 break;
 
             yield return new WaitForSeconds(0.25f);
-        }
-    }
-
-    private void OnTriggerEnter(Collider collider) //��������� ����� �� �������� �����.
-    {
-        if(!_exploded && collider.CompareTag("Explosion")) //����� ����� ��������� �����, ���������� ��.
-        {
-            CancelInvoke("Explode"); //������������ ������� ������, ��� �� �� ������� ������� �����.
-            Explode();  //���������� ��� �������, ���������.
-        }
-
-        if (collider.CompareTag("Bomb")) //���� ��� ����� ������������ � ����� �����, ������� ��� ����� ��� ���������.
-        {
-            StartCoroutine(player.ReturnBombToPool(gameObject, 0f));
         }
     }
 }

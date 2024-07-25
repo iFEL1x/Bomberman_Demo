@@ -106,7 +106,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plane (4)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2708052579573366153, guid: 496d1521d75b43441990b17a9b707388, type: 3}
+    - {fileID: 2708052579573366154, guid: 496d1521d75b43441990b17a9b707388, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 496d1521d75b43441990b17a9b707388, type: 3}
 --- !u!4 &8727741202916452227 stripped
 Transform:
@@ -181,6 +183,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4230815833402638211, guid: aafa96f0018fff847a326826126c6122,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aafa96f0018fff847a326826126c6122, type: 3}
 --- !u!4 &2328511525797248258 stripped
@@ -256,6 +263,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4230815833402638211, guid: aafa96f0018fff847a326826126c6122,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
     m_RemovedComponents:
     - {fileID: 3276216121014386982, guid: aafa96f0018fff847a326826126c6122, type: 3}
     - {fileID: 3276216121014386983, guid: aafa96f0018fff847a326826126c6122, type: 3}
@@ -333,6 +345,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4230815833402638211, guid: aafa96f0018fff847a326826126c6122,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
     m_RemovedComponents:
     - {fileID: 3276216121014386982, guid: aafa96f0018fff847a326826126c6122, type: 3}
     - {fileID: 3276216121014386983, guid: aafa96f0018fff847a326826126c6122, type: 3}
@@ -410,6 +427,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4230815833402638211, guid: aafa96f0018fff847a326826126c6122,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
     m_RemovedComponents:
     - {fileID: 3276216121014386982, guid: aafa96f0018fff847a326826126c6122, type: 3}
     - {fileID: 3276216121014386983, guid: aafa96f0018fff847a326826126c6122, type: 3}
@@ -487,7 +509,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plane (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2708052579573366153, guid: 496d1521d75b43441990b17a9b707388, type: 3}
+    - {fileID: 2708052579573366154, guid: 496d1521d75b43441990b17a9b707388, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 496d1521d75b43441990b17a9b707388, type: 3}
 --- !u!4 &8727741201873069898 stripped
 Transform:
@@ -562,7 +586,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plane (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2708052579573366153, guid: 496d1521d75b43441990b17a9b707388, type: 3}
+    - {fileID: 2708052579573366154, guid: 496d1521d75b43441990b17a9b707388, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 496d1521d75b43441990b17a9b707388, type: 3}
 --- !u!4 &8727741201720684411 stripped
 Transform:
@@ -637,6 +663,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4230815833402638211, guid: aafa96f0018fff847a326826126c6122,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
     m_RemovedComponents:
     - {fileID: 3276216121014386982, guid: aafa96f0018fff847a326826126c6122, type: 3}
     - {fileID: 3276216121014386983, guid: aafa96f0018fff847a326826126c6122, type: 3}
@@ -714,7 +745,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plane (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2708052579573366153, guid: 496d1521d75b43441990b17a9b707388, type: 3}
+    - {fileID: 2708052579573366154, guid: 496d1521d75b43441990b17a9b707388, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 496d1521d75b43441990b17a9b707388, type: 3}
 --- !u!4 &8727741201533329719 stripped
 Transform:

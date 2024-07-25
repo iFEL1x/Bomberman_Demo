@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -53,7 +54,7 @@ public class Player : MonoBehaviour
             if (playerNumber == 1)
                 PlayerOneMovment();
             else
-                PlayerTwoMovment();
+                PlayerTwoMovement();
         } 
     }
 
@@ -99,7 +100,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void PlayerTwoMovment()
+    private void PlayerTwoMovement()
     {
         _direction = Vector3.zero;
 
@@ -140,14 +141,17 @@ public class Player : MonoBehaviour
     {
         if (_bombPool.Count > 0)
         {
-            Bomb bombTemp = _bombPool[0];
+            Bomb bombTemp = _bombPool.First();
             _bombPool.Remove(bombTemp);
-            bombTemp.gameObject.SetActive(true);
+            
             bombTemp.transform.parent = null;
             bombTemp.transform.position =
-                new Vector3(Mathf.RoundToInt(transform.position.x),
-                bombPrefab.transform.position.y,
-                Mathf.RoundToInt(transform.position.z));
+                new Vector3(
+                    Mathf.RoundToInt(transform.position.x), 
+                    bombPrefab.transform.position.y, 
+                    Mathf.RoundToInt(transform.position.z));
+            
+            bombTemp.gameObject.SetActive(true);
         }
     }
 
